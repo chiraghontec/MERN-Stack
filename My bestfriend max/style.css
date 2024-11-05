@@ -1,0 +1,23 @@
+h1{
+    text-align: center;
+    color: red;
+}
+body{
+    background-color: yellow;
+}
+p{
+    text-align: center;
+}
+img{
+    border: solid red 5px;
+    border-color: red;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
