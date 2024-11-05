@@ -1,12 +1,17 @@
-import React from 'react';
 
-// Function to add one to a number
-const addOne = (x) => x + 1;
+import React, { useState } from 'react';
 
-// Increment component
-const Increment = ({ number }) => {
-    const newNumber = addOne(number); // Create a new number
-    return <h1>New Number: {newNumber}</h1>; // Display new number
+const AddTwoNum= () => {
+    const [sum, setSum] = useState(0); // Initialize state with 0
+    let a,b;
+    a = 5;
+    b = 10;
+    return (
+        <div>
+            <h1>Sum:{sum}</h1> {/* Display current number */}
+            <button onClick={()=>{setSum(a+b)}}>Add One</button> {/* Button to add 1 */}
+        </div>
+    );
 };
 
-export default Increment;
+export default AddTwoNum;
