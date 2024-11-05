@@ -1,23 +1,7 @@
-h1{
+.center{
   text-align: center;
-  color: red;
-}
-body{
-  background-color: yellow;
-}
-p{
-  text-align: center;
-}
-img{
-  border: solid red 5px;
-  border-color: red;
+  background-color: aliceblue;
+  margin-top: auto;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
-}
-.App-logo{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
 }
