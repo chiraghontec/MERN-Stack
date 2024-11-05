@@ -1,21 +1,14 @@
-import logo from './max.png';
 import './App.css';
+import Increment from './Increment';
+import BasicExample from './spinner';
+
 
 function App() {
+  const number = 5;
   return (
-    <div className="container mt-5">
-    <div className="alert alert-success" role="alert">
-      This is a success alert—check it out!
-    </div>
-    <div className="alert alert-danger" role="alert">
-      This is a danger alert—something went wrong!
-    </div>
-    <div className="alert alert-warning" role="alert">
-      This is a warning alert—be careful!
-    </div>
-    <div className="alert alert-info" role="alert">
-      This is an info alert—just so you know!
-    </div>
+    <div>
+    <Increment number={number} />
+    <BasicExample/>
   </div>
   );
 }
