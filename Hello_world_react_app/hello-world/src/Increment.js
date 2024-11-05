@@ -2,26 +2,33 @@
 import React, { useState } from 'react';
 
 const AddTwoNum= () => {
-    const [number1, setNumber1] = useState(); // State for first number
-    const [number2, setNumber2] = useState(); // State for second number
+    const [principle, setNumber1] = useState(); // State for first number
+    const [rate, setNumber2] = useState();
+    const [Time, setNumber3] = useState(); // State for second number
     const [sum, setSum] = useState(0);
     const handleAddition = () => {
-        setSum(number1 + number2); // Calculate and update the sum
+        setSum((principle * rate * Time)/100); // Calculate and update the sum
     };
     return (
         <div>
-            <input type="number" value={number1}
+            <input type="number" value={principle}
                 onChange={(e) => setNumber1(Number(e.target.value))}
-                placeholder="Enter first number"
+                placeholder="Enter Principle"
             />
             <input
                 type="number"
-                value={number2}
+                value={rate}
                 onChange={(e) => setNumber2(Number(e.target.value))}
-                placeholder="Enter second number"
+                placeholder="Enter Rate"
+            />
+            <input
+                type="number"
+                value={Time}
+                onChange={(e) => setNumber3(Number(e.target.value))}
+                placeholder="Enter Interest"
             />
             <button onClick={handleAddition}>Add Numbers</button>
-            <h1>Sum of Two Numbers: {sum}</h1>
+            <h1>Finding the Interest: {principle+sum}</h1>
         </div>
     );
 };
