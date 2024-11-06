@@ -22,3 +22,12 @@
 .background{
     background-color: red;
 }
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+body {
+    font-family: "Itim", cursive; /* Apply the font to the whole body */
+}
+
+h1 {
+    font-family: "Itim", cursive; /* Apply the font to h1 elements */
+}

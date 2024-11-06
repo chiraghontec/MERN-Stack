@@ -1,12 +1,8 @@
 import './App.css';
-import First from './First';
-
 function App() {
   return (
-    <div class = 'background'>
-      <div class='card'>
-        <First/>
-      </div>
+    <div>
+        <h1>This is google font</h1>
     </div>
   );
 }
