@@ -24,7 +24,7 @@ const ArrowFunction = () => {
         
         const MotivationalQuote = () => "Believe you can, and you're halfway there.";
 
-    const randomHex = () => `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+    const randomHex = () => `#${Math.floor(Math.random() * 16777215).toString(16)}`; 
     const color = randomHex();
 
     const roll = () => Math.floor(Math.random() * 6) + 1;
