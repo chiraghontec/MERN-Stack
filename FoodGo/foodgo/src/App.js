@@ -1,8 +1,9 @@
 import './App.css';
+import ArrowFunction from './components/ArrowFunction'
 function App() {
   return (
     <div>
-        <h1>This is google font</h1>
+        <ArrowFunction/>
     </div>
   );
 }
