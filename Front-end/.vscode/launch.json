@@ -1,0 +1,10 @@
+{
+    "configurations": [
+    {
+        "command": "npm run start",
+        "name": "Front-end",
+        "request": "launch",
+        "type": "node-terminal"
+    }
+    ]
+}

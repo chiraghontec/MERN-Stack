@@ -1,0 +1,127 @@
+.todo-container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    text-align: center;
+    animation: fadeIn 0.5s ease-in;
+}
+
+.todo-title {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    animation: slideIn 0.5s ease-out;
+}
+
+.todo-input-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.todo-input {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    margin-right: 10px;
+    transition: border-color 0.3s;
+}
+
+.todo-input:focus {
+    border-color: #007bff;
+}
+
+.todo-add-button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.todo-add-button:hover {
+    background-color: #0056b3;
+}
+
+.todo-list {
+    list-style: none;
+    padding: 0;
+}
+
+.todo-item {
+    background-color: #fff;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    animation: slideIn 0.3s ease-in-out;
+}
+
+.todo-text {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.todo-edit-button,
+.todo-delete-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #007bff;
+    margin-left: 5px;
+    transition: color 0.3s;
+}
+
+.todo-edit-button:hover {
+    color: #0056b3;
+}
+
+.todo-delete-button:hover {
+    color: #ff4d4d;
+}
+
+.todo-edit-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.todo-edit-input {
+    flex: 1;
+    padding: 8px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.todo-save-button {
+    padding: 8px 12px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.todo-save-button:hover {
+    background-color: #218838;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-20px); }
+    to { transform: translateY(0); }
+}
