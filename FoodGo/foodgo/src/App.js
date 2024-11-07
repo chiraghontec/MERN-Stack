@@ -5,42 +5,21 @@ import Navbar from './components/NavBar';
 import HeroText from './components/HeroText';
 import FoodCard from './components/FoodCard';
 import Footer from './components/Footer';
-import PaymentPage from './components/PayementPage'; // import PaymentPage component
+import PaymentPage from './components/PayementPage';
+import LoginPage from './components/LoginPage';
+import Home from './components/Home';
 
 function App() {
-  const foodItems = [
-    { name: 'Pizza', description: 'Cheesy and delicious', imageUrl: 'pizza.png' },
-    { name: 'Burger', description: 'Juicy and tasty', imageUrl: 'pizza.png' },
-    { name: 'Pasta', description: 'Creamy and savory', imageUrl: 'pizza.png' },
-    { name: 'Salad', description: 'Fresh and healthy', imageUrl: 'pizza.png' },
-  ];
-
   return (
     <div>
-      <Navbar />
-      <HeroText />
-      
+
+      <router/>
       {/* Define Routes */}
       <Routes>
-        <Route 
-          path="/" 
-          element={
-            <div style={{ display: 'flex', justifyContent: 'space-around', padding: '20px' }}>
-              {foodItems.map((item, index) => (
-                <FoodCard 
-                  key={index} 
-                  name={item.name} 
-                  description={item.description} 
-                  imageUrl={item.imageUrl} 
-                />
-              ))}
-            </div>
-          } 
-        />
+        <Route path='/Home' element={<Home/>}/>
         <Route path="/payment" element={<PaymentPage />} />
+        <Route path="/" element={<LoginPage/>}/>
       </Routes>
-      
-      <Footer />
     </div>
   );
 }

@@ -21,7 +21,7 @@ function Navbar() {
         padding: 0 
       }}>
         <li><a href="#" style={{ color: 'white', textDecoration: 'none' }}>Home</a></li>
-        <li><a href="#" style={{ color: 'white', textDecoration: 'none' }}>Menu</a></li>
+        <li><a href="/Menue" style={{ color: 'white', textDecoration: 'none' }}>Menu</a></li>
         <li><a href="#" style={{ color: 'white', textDecoration: 'none' }}>About</a></li>
         <li><a href="#" style={{ color: 'white', textDecoration: 'none' }}>Contact</a></li>
       </ul>
